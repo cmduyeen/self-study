@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+ENV/
+
+# OS and Editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+*.log
