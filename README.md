@@ -1,20 +1,12 @@
 # Code học tập
 
-Kho lưu code và bài tập khi tự học lập trình.
+Code và bài tập được chia theo năm, sách và khóa học; danh sách/trạng thái lấy từ `study.json`, ghi chú lý thuyết đăng trên [blog](https://cmduyeen.github.io/).
 
-- `books/`: mỗi thư mục con tương ứng một cuốn sách.
-- `courses/`: mỗi thư mục con tương ứng một khóa học.
+🟥 Chưa bắt đầu · 🟧 Sẵn sàng · 🟨 Đang học · 🟩 Hoàn thành
 
-Trong mỗi nguồn, sắp xếp bài tập theo chương hoặc bài học. Ghi chú lý thuyết được viết thành bài đăng trên [blog](https://cmduyeen.github.io/).
+<!-- STUDY-LIST:START -->
+## 2026
 
-```text
-books/
-└── ten-sach/
-    ├── chapter-01/
-    └── chapter-02/
-
-courses/
-└── ten-khoa-hoc/
-    ├── lesson-01/
-    └── lesson-02/
-```
+- 🟧 book - [Automate the Boring Stuff](2026/books/automate-the-boring-stuff/)
+- 🟨 course - [Batch Script Programming Crash Course (CMD)](2026/courses/batch-script-programming-crash-course-cmd/)
+<!-- STUDY-LIST:END -->
