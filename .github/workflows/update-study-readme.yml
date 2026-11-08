@@ -5,9 +5,8 @@ on:
     branches:
       - main
     paths:
-      - '**/study.json'
-      - 'scripts/generate-readme.py'
-      - '.github/workflows/update-study-readme.yml'
+      - '????/books/*/study.json'
+      - '????/courses/*/study.json'
   workflow_dispatch:
 
 permissions:
@@ -20,9 +19,12 @@ concurrency:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    timeout-minutes: 2
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Generate study list
         run: python3 scripts/generate-readme.py
@@ -33,6 +35,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           if ! git diff --cached --quiet; then
-            git commit -m "docs: update study list [skip ci]"
+            git commit -m "docs: update study list"
             git push
           fi

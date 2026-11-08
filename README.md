@@ -1,8 +1,8 @@
-# Code học tập
+# Self-Study
 
-Code và bài tập được chia theo năm, sách và khóa học; danh sách/trạng thái lấy từ `study.json`, ghi chú lý thuyết đăng trên [blog](https://cmduyeen.github.io/).
+Code and exercises from my self-study.
 
-🟥 Chưa bắt đầu · 🟧 Sẵn sàng · 🟨 Đang học · 🟩 Hoàn thành
+🟥 Not started · 🟧 Ready · 🟨 In progress · 🟩 Completed
 
 <!-- STUDY-LIST:START -->
 ## 2026
