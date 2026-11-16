@@ -13,3 +13,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
+.last_study_file
+.last_vibe_project
+.github_profile_cache.json
