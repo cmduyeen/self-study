@@ -32,7 +32,10 @@ def load_studies():
             raise ValueError(f"{relative}: metadata must be a JSON object")
         title = data.get("title")
         status = data.get("status")
-        if not isinstance(title, str) or not title.strip():
+        if not isinstance(title, str):
+            raise ValueError(f"{relative}: 'title' must be a non-empty string")
+        normalized_title = " ".join(title.split())
+        if not normalized_title:
             raise ValueError(f"{relative}: 'title' must be a non-empty string")
         if not isinstance(status, str) or status not in STATUS:
             valid = ", ".join(STATUS)
@@ -41,7 +44,7 @@ def load_studies():
         category = match.group("category")
         target = quote(metadata_path.parent.relative_to(ROOT).as_posix(), safe="/-._")
         studies.append(
-            (match.group("year"), category, title.strip(), STATUS[status], target)
+            (match.group("year"), category, normalized_title, STATUS[status], target)
         )
 
     studies.sort(key=lambda item: (item[0], item[1] != "books", item[2].casefold()))
