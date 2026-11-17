@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - '????/books/*/study.json'
-      - '????/courses/*/study.json'
+      - '*/books/*/study.json'
+      - '*/courses/*/study.json'
   workflow_dispatch:
 
 permissions:
